@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION["seller_id"])){
+	unset($_SESSION["seller_id"]);
+	unset($_SESSION["seller_name"]);
+	//unset($_SESSION["cart_item"]);
+	header("location:seller_login.php");
+}	
+?>

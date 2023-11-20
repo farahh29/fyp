@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION["emp_id"])){
+	unset($_SESSION["emp_id"]);
+	unset($_SESSION["emp_name"]);
+	//unset($_SESSION["cart_item"]);
+	header("location:emp_login.php");
+}	
+?>
